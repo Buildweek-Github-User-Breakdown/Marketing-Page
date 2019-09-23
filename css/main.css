@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -134,20 +148,37 @@ html {
 }
 body {
   background-color: #2B3137;
+  font-family: 'Raleway', sans-serif;
   font-size: 1.6rem;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Roboto', sans-serif;
 }
 .container {
   width: 50vw;
-  background: #fff;
+  min-height: 100vh;
   margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
+  background: #fff;
+}
+.container .intro {
+  text-align: center;
+  width: 100%;
+  margin: 2% 0;
+}
+.container .intro h2 {
+  font-size: 5rem;
+  padding: 1%;
 }
 .card-container {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  align-items: center;
 }
 .card {
   width: 20%;
@@ -155,7 +186,7 @@ body {
   flex-flow: column wrap;
   align-items: center;
   text-align: center;
-  box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow: 3px 3px 4px 3px #ccc;
   margin: 3%;
 }
 .card .profile-pic {
@@ -164,43 +195,23 @@ body {
 }
 .card h2 {
   font-size: 2.8rem;
-  width: 70%;
-  border-bottom: 1px solid gray;
+  width: 80%;
   padding: 2%;
   margin-bottom: 5%;
+  border-bottom: 1px solid gray;
 }
 .card h3 {
   font-size: 2rem;
   padding-bottom: 5%;
 }
-.card-test {
-  width: 20%;
+.card .social {
   display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  text-align: center;
-  box-shadow: 3px 3px 5px 6px #ccc;
-  margin: 3%;
+  width: 50%;
+  justify-content: space-around;
+  margin: 5% 0;
 }
-.card-test .profile-pic {
-  width: 95%;
-  margin: 3% auto;
-}
-.card-test h2 {
-  font-size: 2.8rem;
-  width: 70%;
-  border-bottom: 1px solid gray;
-  padding: 2%;
-  margin-bottom: 5%;
-}
-.card-test h3 {
-  font-size: 1.8rem;
-  padding-bottom: 5%;
-  color: #3d3d3d;
-  font-style: italic;
-}
-.card-test h3 strong {
-  font-size: 2.2rem;
-  color: black;
-  font-style: normal;
+.card .social a {
+  font-size: 5rem;
+  color: #272727;
+  margin: 0 5%;
 }
