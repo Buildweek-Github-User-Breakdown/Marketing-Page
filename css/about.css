@@ -171,6 +171,12 @@ p {
   justify-content: space-between;
   background-color: #383838;
 }
+@media (max-width: 1024px) {
+  .top-nav {
+    max-width: 100%;
+    width: 100%;
+  }
+}
 @media (max-width: 500px) {
   .top-nav {
     flex-direction: column;
@@ -286,6 +292,12 @@ footer {
   background-color: #383838;
   text-align: center;
 }
+@media (max-width: 1024px) {
+  footer {
+    max-width: 100%;
+    width: 100%;
+  }
+}
 @media (max-width: 500px) {
   footer {
     padding: 4% 0;
@@ -310,17 +322,18 @@ footer a:hover {
 }
 @media (max-width: 1024px) {
   .container {
-    width: 100vw;
+    max-width: 100%;
+    width: 100%;
   }
 }
 @media (max-width: 800px) {
   .container {
-    width: 100vw;
+    width: 100%;
   }
 }
 @media (max-width: 500px) {
   .container {
-    width: 100vw;
+    width: 100%;
   }
 }
 .container .intro {
