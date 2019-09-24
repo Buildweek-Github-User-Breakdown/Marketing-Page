@@ -168,6 +168,13 @@ p {
   justify-content: space-between;
   background-color: #383838;
 }
+@media (max-width: 800px) {
+  .top-nav {
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+  }
+}
 @media (max-width: 500px) {
   .top-nav {
     flex-flow: row wrap;
@@ -262,6 +269,21 @@ footer a:hover {
   flex-flow: row wrap;
   background: #fff;
 }
+@media (max-width: 1024px) {
+  .container {
+    width: 100vw;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    width: 100vw;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100vw;
+  }
+}
 .container .intro {
   text-align: center;
   width: 100%;
@@ -276,11 +298,6 @@ footer a:hover {
     margin: 4% 0;
   }
 }
-@media (max-width: 500px) {
-  .container {
-    width: 100vw;
-  }
-}
 .card-container {
   width: 100%;
   display: flex;
@@ -289,13 +306,14 @@ footer a:hover {
   align-items: center;
 }
 .card {
-  width: 20%;
   display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  text-align: center;
-  box-shadow: 3px 3px 4px 3px #ccc;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 25%;
+  min-height: 30%;
+  padding: 2%;
   margin: 3%;
+  box-shadow: 1px 1px 5px 1px #ccc;
 }
 @media (max-width: 500px) {
   .card {
@@ -304,28 +322,27 @@ footer a:hover {
   }
 }
 .card .profile-pic {
-  width: 95%;
-  margin: 3% auto;
+  width: 100%;
+  margin: 0 auto;
 }
 .card h2 {
-  font-size: 2.8rem;
-  width: 80%;
-  padding: 2%;
+  text-align: center;
+  font-size: 2.4rem;
+  width: 100%;
+  padding: 5%;
   margin-bottom: 5%;
   border-bottom: 1px solid gray;
 }
 .card h3 {
-  font-size: 2rem;
-  padding-bottom: 5%;
+  font-size: 1.6rem;
 }
 .card .social {
-  display: flex;
-  width: 50%;
-  justify-content: space-around;
-  margin: 5% 0;
+  text-align: center;
+  margin-top: 5%;
+  width: 100%;
 }
 .card .social a {
-  font-size: 5rem;
-  color: #272727;
-  margin: 0 5%;
+  font-size: 4rem;
+  color: #2b3137;
+  padding: 2%;
 }
