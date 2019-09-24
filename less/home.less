@@ -1,7 +1,9 @@
 .wrapper{
-    width: 50vw;
+    max-width: 800px;
+	width: 100%;
     margin: 0 auto; 
-    background: @container-bg;
+    padding: 1% 0; 
+    background-color: #fff;
 
     hr{
         width: 80%;
@@ -13,29 +15,26 @@
 
 
         h1{
-            font-family: 'Roboto', sans-serif;
-            font-size: 3.7rem;
-
-            @media @mobile-home {
+            @media @mobile {
                 margin-top: 5%;
             }
         }
 
-        p {
-            padding: 2%;
+        p{
+            margin: 4%;
         }
     }
 
     .info-part{
 
-        padding: 2% 9%;
+        padding: 3% 9%;
 
         .top-info{
             display: flex;
             justify-content: space-between;
             margin: 6% 0;
 
-            @media @mobile-home {
+            @media @mobile {
                 flex-direction: column;
             }
 
@@ -44,7 +43,7 @@
                 border: 2px solid black;
                 width: 49%;
 
-                @media @mobile-home {
+                @media @mobile {
                     margin: 0 auto;
                     width: 95%;
                 }
@@ -61,10 +60,10 @@
 
             .img{
                 background-color: gray;
-                padding: 12%;
+                padding: 9%;
                 width: 30%;
 
-                @media @mobile-home {
+                @media @mobile {
                     margin: 2% auto;
                     width: 90%;
 
@@ -78,7 +77,7 @@
             justify-content: space-between;
             margin: 2% 0;
 
-            @media @mobile-home {
+            @media @mobile {
                 flex-direction: column-reverse;
             }
 
@@ -87,7 +86,7 @@
                 border: 2px solid black;
                 width: 49%;
 
-                @media @mobile-home {
+                @media @mobile {
                     margin: 0 auto;
                     width: 95%;
                 }
@@ -103,10 +102,10 @@
 
             .img{
                 background-color: gray;
-                padding: 12%;
+                padding: 9%;
                 width: 30%;
 
-                @media @mobile-home {
+                @media @mobile {
                     margin: 2% auto;
                     width: 90%;
 
@@ -116,11 +115,9 @@
 
     }
 
-
     .button-container {
         display: flex;
         justify-content: center;
-        margin: 10% 0;
     }
 
     button{
@@ -128,21 +125,21 @@
         background-color: #31EE5A;
         border: 1px solid #31EE5A;
         font-family: 'Raleway', sans-serif;
-        font-size: 5rem;
-        padding: 4% 25%;
+        font-size: 2rem;
+        padding: 4% 30%;
         outline: none;
         border-radius: 30px;
         box-shadow: 10px 8px 13px rgba(0, 0, 0, 0.25);
         transition: 0.5s;
+        margin-bottom: 10%;
 
-        @media @mobile-home {
-            margin: 3% 8% 20% ;
+        @media @mobile {
+            margin: 3% 8% 20%;
             width: 80%;
         }
 
         &:hover{
-            background-color: rgb(111, 252, 141);
-            border: 1px solid rgb(111, 252, 141);
+            background-color: white;
             color: black;
         }
     }
