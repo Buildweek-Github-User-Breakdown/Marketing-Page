@@ -5,6 +5,13 @@
   justify-content: space-between;
   background-color: #383838;
 
+  @media @mobile {
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+
   a {
       text-decoration: none;
       font-size: 3rem;
@@ -12,6 +19,12 @@
       color: #ffffff;
       padding-left: 2%;
       .link-transition();
+
+      @media @mobile {
+        width: 100%;
+        padding: 6% 0;
+        border-bottom: 1px solid black;
+      }
 
           &:hover{
               color: #31EE5A;
@@ -23,6 +36,13 @@
     justify-content: flex-end;
     width: 50%;
 
+    @media @mobile {
+      width: 100%;
+      justify-content: center;
+      flex-flow: row wrap;
+      text-align: center;
+    }
+
     a {
       text-decoration: none;
       color: black;
@@ -32,12 +52,21 @@
       color: #ffffff;
       .link-transition();
 
+      @media @mobile {
+        width: 100%;
+        padding-right: 0;
+      }
+
       &:hover {
         color: #31EE5A;
       }
 
       &:last-child {
         padding-right: 5%;
+
+        @media @mobile {
+          padding-right: 0;
+        }
       }
     }
   }
