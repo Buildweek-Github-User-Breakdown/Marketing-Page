@@ -4,9 +4,9 @@
 
 @import 'reset';
 
-@import 'nav';
+@import 'about-nav';
 
-@import 'footer';
+@import 'about-footer';
 
 .container {
   width: 50vw;
@@ -15,6 +15,18 @@
   display: flex;
   flex-flow: row wrap;
   background: @container-bg;
+
+  @media @desktop {
+    width: 100vw;
+  }
+
+  @media @tablet {
+    width: 100vw;
+  }
+
+  @media @mobile {
+    width: 100vw;
+  }
 
   .intro {
     text-align: center;
@@ -29,13 +41,6 @@
       margin: 4% 0;
     }
   }
-
-
-  @media @mobile {
-    width: 100vw;
-  }
-  
-
 }
 
 .card-container {
@@ -47,14 +52,14 @@
 }
 
 .card {
-  width: 20%;
   display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  text-align: center;
-  box-shadow: 3px 3px 4px 3px #ccc;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 25%;
+  min-height: 30%;
+  padding: 2%;
   margin: 3%;
-
+  box-shadow: 1px 1px 5px 1px #ccc;
 
   @media @mobile {
     width: 100vw;
@@ -62,32 +67,31 @@
   }
 
   .profile-pic {
-    width: 95%;
-    margin: 3% auto;
+    width: 100%;
+    margin: 0 auto;
   }
 
   h2 {
-    font-size: 2.8rem;
-    width: 80%;
-    padding: 2%;
+    text-align: center;
+    font-size: 2.4rem;
+    width: 100%;
+    padding: 5%;
     margin-bottom: 5%;
     border-bottom: 1px solid gray;
   }
   
   h3 {
-    font-size: 2rem;
-    padding-bottom: 5%;
+    font-size: 1.6rem;
   }
 
   .social {
-    display: flex;
-    width: 50%;
-    justify-content:space-around;
-    margin: 5% 0;    
+    text-align: center;
+    margin-top: 5%;
+    width: 100%;
     a {
-      font-size: 5rem;
-      color: rgb(39, 39, 39);
-      margin: 0 5%;
+      font-size: 4rem;
+      color: #2b3137;
+      padding: 2%;
     }
   }
 
