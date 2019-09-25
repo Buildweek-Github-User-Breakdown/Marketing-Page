@@ -235,7 +235,7 @@ footer a {
   margin: 0 auto;
   padding: 1% 0;
   background-color: #fff;
-  padding-top: 4%;
+  padding-top: 3%;
 }
 .wrapper hr {
   width: 80%;
@@ -302,10 +302,17 @@ footer a {
   max-height: 450px;
   height: 99%;
 }
+@media (max-width: 800px) {
+  .wrapper .info-part .top-info .img {
+    width: 95%;
+    padding-top: 5%;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 500px) {
   .wrapper .info-part .top-info .img {
     margin: 2% auto;
-    width: 90%;
+    width: 95%;
   }
 }
 .wrapper .info-part .bottom-info {
@@ -381,7 +388,7 @@ footer a {
   font-weight: bolder;
   padding: 4% 30%;
   outline: none;
-  border-radius: 30px;
+  border-radius: 10px;
   box-shadow: 10px 8px 13px rgba(0, 0, 0, 0.25);
   transition: 0.5s;
   margin-bottom: 10%;
@@ -389,8 +396,8 @@ footer a {
 }
 @media (max-width: 500px) {
   .wrapper button {
-    margin: 3% 8% 20%;
-    width: 80%;
+    width: 100%;
+    border-radius: 0;
   }
 }
 .wrapper button:hover {
