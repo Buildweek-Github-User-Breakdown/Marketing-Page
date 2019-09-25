@@ -159,8 +159,15 @@ h3 {
   font-size: 3.2rem;
 }
 p {
-  font-size: 2rem;
-  line-height: 1.6;
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+ul {
+  padding: 3%;
+  margin-left: 2%;
+}
+li {
+  list-style-type: disc;
 }
 .top-nav {
   max-width: 880px;
