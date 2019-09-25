@@ -163,7 +163,7 @@ p {
   line-height: 1.6;
 }
 .top-nav {
-  max-width: 800px;
+  max-width: 880px;
   width: 100%;
   margin: 0 auto;
   padding: 1% 0;
@@ -175,6 +175,11 @@ p {
   .top-nav {
     max-width: 100%;
     width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .top-nav {
+    padding: 2% 0;
   }
 }
 @media (max-width: 500px) {
@@ -313,7 +318,7 @@ footer a:hover {
   color: #31EE5A;
 }
 .container {
-  max-width: 800px;
+  max-width: 880px;
   min-height: 100vh;
   margin: 0 auto;
   display: flex;
@@ -381,12 +386,13 @@ footer a:hover {
 }
 @media (max-width: 500px) {
   .card-container .card .profile-pic {
-    width: 90%;
+    width: 80%;
+    max-height: 100%;
   }
 }
 .card-container .card h2 {
   text-align: center;
-  font-size: 2.4rem;
+  font-size: 2rem;
   width: 100%;
   padding: 5%;
   margin-bottom: 5%;
