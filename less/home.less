@@ -5,6 +5,7 @@
     margin: 0 auto; 
     padding: 1% 0; 
     background-color: #fff;
+    padding-top: 4%;
 
         //************************************** the header of page
     hr{
@@ -31,7 +32,7 @@
     .info-part{
 
         padding: 3% 9%;
-
+        
 
         //**************************************  the top part of info with text on left and image on right
         .top-info{
@@ -51,9 +52,9 @@
 
             //**************************************  the left text of the page in top info
             .part-1{
+
                 padding: 2%;
                 border: 2px solid black;
-                width: 49%;
 
                 //************************************** 800px for the top page
                 @media @tablet{
@@ -70,6 +71,7 @@
 
                 h2{
                     text-align: center;
+                    padding-bottom: 2%;
                 }
 
                 p{
@@ -117,7 +119,6 @@
             .part-2{
                 padding: 2%;
                 border: 2px solid black;
-                width: 49%;
 
                 //**************************************  670px only for bottom info text on right
                 @media (max-width: 670px){
@@ -133,6 +134,7 @@
 
                 h2{
                     text-align: center;
+                    padding-bottom: 2%;
                 }
 
                 p{
@@ -153,8 +155,9 @@
                 }
 
                 img{
+                    width: 300px;
                     max-width: 100%;
-                    max-height: 450px;
+                    max-height: 200px;
                 }
 
                 //************************************** 500px page size for bottom info image
@@ -171,6 +174,7 @@
     //**************************************  to center the button
 
     .button-container {
+        padding: 5% 0;
         display: flex;
         justify-content: center;
     }
@@ -182,13 +186,15 @@
         background-color: #31EE5A;
         border: 1px solid #31EE5A;
         font-family: 'Raleway', sans-serif;
-        font-size: 2rem;
+        font-size: 3rem;
+        font-weight: bolder;
         padding: 4% 30%;
         outline: none;
         border-radius: 30px;
         box-shadow: 10px 8px 13px rgba(0, 0, 0, 0.25);
         transition: 0.5s;
         margin-bottom: 10%;
+        color: white;
 
         @media @mobile {
             margin: 3% 8% 20%;
