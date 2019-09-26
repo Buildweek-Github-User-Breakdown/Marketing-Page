@@ -284,19 +284,19 @@ footer a:hover {
 }
 @media (max-width: 500px) {
   .container .intro {
-    margin: 10% 0 0 0;
+    margin-top: 10%;
   }
 }
 .card-container {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 .card-container .card {
-  display: flex;
   flex-flow: row wrap;
+  display: flex;
   justify-content: center;
   width: 25%;
   min-height: 30%;
