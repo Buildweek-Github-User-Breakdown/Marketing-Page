@@ -1,7 +1,7 @@
 # Marketing-Page
 ## Buildweek-Github-User-Breakdown 
 
-### Orginization Contributors
+### Organization Contributors
 
 <a href="https://github.com/JHaydenDev">![Joseph Hayden][jh]</a>
 <a href="https://github.com/Krunal1997patel">![Krunal Patel][kp]</a>
